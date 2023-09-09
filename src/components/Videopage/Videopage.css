@@ -1,0 +1,102 @@
+
+.video-page {
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 20px;
+  }
+  
+  
+  .main-video {
+    flex: 1;
+    margin-right: 20px;
+    height: 400px; 
+    position: relative;
+  }
+  
+  .recommended-videos {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    object-fit: fill;
+  }
+  
+ 
+  .video-thumbnail {
+    flex: 1;
+   
+    cursor: pointer;
+    background-color:transparent;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+   
+
+  }
+
+  .video1>iframe{
+    margin-left: 21px;
+    padding: -20px;
+    top: -30%;
+    border-radius: 5px;
+  }
+  
+  .video-thumbnail:hover {
+    background-color: #ddd;
+  }
+  
+ 
+  .video-thumbnail h3 {
+    margin: 10px 0;
+    font-size: 14px;
+    background-color: white;
+    padding: auto;
+    margin: auto;
+  }
+  
+  
+ 
+  /* Style for the main video's iframe */
+  .main-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+   
+    position: absolute;
+    margin-inline: -20px;
+    
+  }
+
+  .button-control{
+    background-color: var(--blue);
+    
+  }
+
+  .button-control:hover{
+    cursor: pointer;
+    color: var(--blue);
+    background: transparent;
+    border: 2px solid var(--blue);
+  }
+
+  .videotitle{
+   color: white;
+  }
+  .video-details{
+    background-color: white;
+    width: auto;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .bottom-sheet {
+      max-height: 60vh; 
+    }
+  }
